@@ -1,0 +1,27 @@
+class ITEM{ char name[100]; //Item Name float rate; //Rate of that Item int qty; 
+//Quantity of that Item 
+public: void add_item(); 
+//Add Item in This Object 
+void change_rate();
+ //Change Rate of This Item 
+void issue_item(); 
+//Issue This Item void 
+output_data(); 
+//Output the Data of this Item 
+};
+ class ITEM_LIST{
+ //I have taken map to maintain the uniqueness of ItemCode 
+//and because of it's ease of access 
+//here "string" is for ItemCode and "ITEM" is for the
+ //remaining data of that particular 
+Item map<string,ITEM> list; 
+//List of ITEMs 
+public: 
+void ADD();
+ //Add any Item 
+void CHANGE_RATE(); //Change Rate of Any Item 
+void ISSUE(); //Issue Any Item 
+void OUTPUT(); //Show Stored Data of any Particular Item 
+}
+
+
